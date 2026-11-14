@@ -90,7 +90,7 @@ function render(v) {
   $("#ch-name").textContent = v.record.full_name;
   $("#ch-sub").textContent = `${v.candidate_id} · ${v.ended ? "chat ended" : "online"}${v.stalls ? " · re-anchoring (" + v.stalls + ")" : ""}`;
   $("#leave").hidden = v.ended;
-  $("#text").disabled = $("#composer button").disabled = v.ended;
+  $("#text").disabled = $("#sendbtn").disabled = v.ended;
   renderChips(v); renderQuality(v);
   const b = $("#banner");
   if (v.ended) {
