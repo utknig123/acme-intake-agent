@@ -9,7 +9,9 @@ You give it a candidate ID. It reads the record, works out what's missing or wro
 - Greets, **confirms identity by name** (never asks for an ID), then collects fields in natural groups.
 - Understands messy answers: "bangalore", "btech", "1st June", "two thousand twenty seven", "eight point four".
 - Handles exceptions: busy/later, refusal, invalid answers, off-topic/dodging, upset, wrong person, silence.
-- Verifies in the background: email domain exists, not disposable, GitHub username exists.
+- Verifies in the background, **fail-closed**: email domain exists, not disposable, GitHub username exists. Failed or unrunnable check → not saved until the candidate confirms, then labelled UNVERIFIED.
+- **Application Quality Score** (0-100, A-D) with risk flags and verification badges on every record.
+- **Voice input** (mic button) - say "twenty twenty seven" and it is saved as 2027.
 - Saves safely (version check, idempotency, conflict merge, retries) and **never overwrites** valid data.
 - Writes outcome: `completed`, `in_progress` (with follow-up time), `refused` (which fields), `needs_human`, `no_answer`; attempts, last-contact time, notes.
 - **Work Queue** for recruiters: who next and why, plus a completion funnel.
@@ -38,7 +40,7 @@ State lives in the chat (a signed token on the web, memory in the terminal). The
 ## Live demo flow (about 8 minutes)
 1. **Work Queue** (left): "this is what a recruiter sees: next best action per candidate". Point at the funnel.
 2. **c002** (3 fields missing): show the **Plan** tab first (the agent decided what to ask). Chat: confirm identity, then answer **"twenty twenty seven"** and **"two thousand and... six months"** → show numbers saved correctly in **Record** with your quote as proof.
-3. **c005** (bad email `kabir.shah@gmail`): agent notices the existing data is wrong and asks to fix it. Give an email with a fake domain → show the background check pushing back.
+3. **c005** (bad email `kabir.shah@gmail`): agent notices the existing data is wrong and asks to fix it. Give an email with a fake domain → show the background check pushing back, then watch the Quality bar and verification badge update.
 4. **Exceptions** on any candidate: reply "lol" twice (agent re-anchors), then "busy, message me tomorrow 6pm" → outcome `in_progress`, follow-up time shown in the **Hand-off** tab and the notes.
 5. **c008** (graduation year 2031): say "2025" → agent explains the 2026-2028 rule and escalates to `needs_human` if impossible.
 6. **c003 or c006** (already complete): "no chat started, nobody bothered".
@@ -51,13 +53,13 @@ State lives in the chat (a signed token on the web, memory in the terminal). The
 - *Rate limits?* 3-model fallback and waiting; deterministic fallback question if all fail.
 - *Abandoned chats?* `/quit`, idle timeout, closing the tab → `no_answer` or `in_progress`, attempts +1, note of what's left.
 - *Two writers at once?* `If-Match` version; on 409 re-read and merge, never overwrite someone else's value.
-- *What's unique?* Work Queue with follow-up scheduling, background verification, spoken-number understanding, proof quotes per field.
+- *What's unique?* Quality Score with risk flags, fail-closed verification, Work Queue with follow-up scheduling, voice + spoken numbers, proof quotes per field.
 
 ## How to run
 ```bash
 python agent.py --candidate-id c002      # terminal
 python -m acme_agent.local               # web UI http://127.0.0.1:8080
-python -m unittest discover -s tests     # 23 offline tests
+python -m unittest discover -s tests     # 27 offline tests
 python scripts/aws_tool.py deploy        # AWS
 ```
 Live: https://kcjwxwjdaefxakn7l6nrtntqnu0ronmo.lambda-url.ap-south-1.on.aws/

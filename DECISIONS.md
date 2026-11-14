@@ -12,7 +12,9 @@
 | Claims can't be faked | "Completed" is accepted only after re-reading the database. Replies like "I've saved it" with no save are blocked. | The AI can't just say it's done. |
 | No garbled replies | Every reply is scanned; bad ones are regenerated, and if still bad a clean built-in question is sent instead. | A candidate never sees broken text. |
 | Spoken numbers | "two thousand four", "twenty twenty seven", "eight point four" are converted to digits. | People type how they talk. |
-| Background checks | Email domain is checked to really exist (DNS), disposable emails flagged, GitHub username checked. If the check can't run, we just continue. | Catches typos like `gmial.com` or fake handles without annoying people. |
+| Background checks (fail-closed) | Email domain must really exist (DNS) and not be disposable; GitHub username must exist. If the check fails OR can't run, the value is NOT saved until the candidate re-checks/confirms; if they insist, it is saved and labelled `UNVERIFIED` in the notes. | Nothing unproven goes in silently; a human sees exactly what is unverified. |
+| Quality Score | Every record gets 0-100 (A-D): completeness 50, verification 20, consistency 20, proof-quotes 10, plus risk flags (e.g. email doesn't match name, odd dates, low CGPA). Written into the notes. | Tells a recruiter how much to trust each record at a glance. |
+| Voice | Mic button (browser speech-to-text); spoken numbers are understood. | Natural for candidates, great demo. |
 | Don't overwrite | Only changed fields are sent; valid existing values need the candidate to say "that changed"; notes are appended, never replaced. | Required by the assignment. |
 | Safe writes | Version check (`If-Match`), unique `Idempotency-Key`, re-read and merge on conflict, retry with waits on errors. | No lost or double updates. |
 | Candidate drifts off-topic | A "stall" counter: gently re-ask, then offer options, then offer to pause, then end politely. | Brings them back without nagging. |
@@ -20,6 +22,11 @@
 | Follow-ups | If they say "call me tomorrow 6pm", the time is saved in the notes as `follow_up_at`. | Next run can pick up exactly there. |
 | 3-model fallback | Groq gpt-oss-120b → Gemini 2.5 Flash → Groq gpt-oss-20b; waits out rate limits. | Free tiers get throttled. (Gemini needs a free key in `.env`.) |
 | Hosting | One AWS Lambda serves UI + API. Chat state travels as a signed token (no database needed). Frontend can also go on Vercel. | Simplest thing that works. |
+
+## Standout features
+1. **Application Quality Score** with risk flags and verification badges (above).
+2. **Work Queue** (below).
+3. Voice answers + spoken-number understanding.
 
 ## Project-manager feature: the Work Queue
 A recruiter sees **who to contact next and why**: overdue follow-ups first, "almost done" candidates next (quick wins), repeated no-answers pushed down, and escalated cases shown as "Human review". A funnel shows % complete. It uses only data the agent already writes, so no extra setup.
