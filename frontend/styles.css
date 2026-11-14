@@ -67,3 +67,5 @@ h4{margin:14px 0 6px;font-size:12px;text-transform:uppercase;letter-spacing:.05e
 .vb{padding:2px 9px;border-radius:99px;font-size:11.5px;font-weight:600}.vb.verified{background:var(--okbg);color:var(--ok)}.vb.unverified{background:var(--warnbg);color:var(--warn)}.vb.bad{background:var(--badbg);color:var(--bad)}
 .mic.rec{background:var(--badbg);border-color:var(--bad);animation:pulse 1s infinite}@keyframes pulse{50%{box-shadow:0 0 0 6px rgba(211,58,58,.2)}}
 .bar-s{height:6px;border-radius:9px;background:var(--line);overflow:hidden;margin:3px 0 8px}.bar-s i{display:block;height:100%;background:var(--me)}
+/* left column scrolls as a whole so the candidate list is never clipped */
+.list{overflow-y:auto}.list .cands{overflow:visible;flex:none}.list .queue,.list .funnel,.list form,.list .ph{flex:none}

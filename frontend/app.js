@@ -71,6 +71,7 @@ function setRing(done, total) {
   $("#ringtxt").textContent = `${done}/${total}`; $("#ring").classList.toggle("done", done === total);
 }
 function renderQuality(v) {
+  if (!v.quality) return;
   const q = v.quality, el = $("#qbar");
   el.hidden = false;
   const vb = Object.entries(v.verifications || {}).map(([f, d]) => `<span class="vb ${esc(d.status)}" title="${esc(d.reason)}">${d.status === "verified" ? "✓ verified" : d.status === "bad" ? "✗ failed check" : "⚠ unverified"} · ${esc(f.replace("_url", ""))}</span>`).join("");
@@ -136,6 +137,7 @@ function renderPlan(p) {
   $("#t-plan").innerHTML = `<h4>Missing</h4><ul>${li(p.missing)}</ul><h4>Existing data that looks wrong</h4><ul>${li(p.invalid)}</ul><h4>Needs confirmation</h4><ul>${li(p.confirm)}</ul><h4>Auto-normalised (no question needed)</h4><ul>${li(Object.entries(p.autofix).map(([k, v]) => `${k} → ${v}`))}</ul><h4>Optional, ask once</h4><ul>${li(p.optional_missing)}</ul>`;
 }
 function qualityHtml(q) {
+  if (!q) return "";
   const parts = Object.entries(q.parts).map(([k, n]) => `<div class="k"><span>${k}</span><span>${n}</span></div>`).join("");
   return `<h4>Application quality: ${q.score}/100 (${q.grade})</h4><div class="bar-s"><i style="width:${q.score}%"></i></div><div class="row">${parts}</div>` + (q.risk.length ? `<h4>Risk flags for a human</h4><ul>${q.risk.map((r) => `<li>${esc(r)}</li>`).join("")}</ul>` : '<p class="muted pad">No risk flags.</p>');
 }
