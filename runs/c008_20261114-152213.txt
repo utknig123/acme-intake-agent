@@ -1,0 +1,11 @@
+AGENT: Hi Meera! I’m Maya, the ACME internship team’s chat assistant. Just checking—are you the Meera Joshi who applied?
+CANDIDATE: Haan Maya! Main Meera Joshi, BBA grad 2025, 84% CGPA, GitHub repo: github.com/meerajoshi. :)
+AGENT: Thanks Meera! I see a mismatch with the degree and graduation year we have on file. Let’s get this right – could you confirm your current degree (B.Tech?) and expected graduation year? If it’s different, I’ll note it for the team.
+CANDIDATE: Sorry Maya, typo earlier! I’m B.Tech in Electronics & Telecommunication, Veermata Jijabai Technological Institute, graduating Jan 2027. 8.3 CGPA.
+AGENT: Sorry, I'm having a small technical hiccup on my side. Could you send that again in a moment?
+CANDIDATE: Sure! B.Tech Electronics & Telecommunication, VJTI Mumbai, graduating Jan 2027, CGPA 8.3/10. :)
+AGENT: Great, thanks! Do you have a LinkedIn profile or any other GitHub repo you'd like us to see? If not, just let me know and we’ll finish up.
+CANDIDATE: Here’s my GitHub: github.com/meerajoshi and LinkedIn: linkedin.com/in/meerajoshi. Let me know if you need anything else!
+AGENT: Thanks! We’ll wrap up your application now. Have a great day!
+
+OUTCOME: completed

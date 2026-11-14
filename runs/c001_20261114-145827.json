@@ -1,0 +1,426 @@
+{
+  "cid": "c001",
+  "record": {
+    "id": "c001",
+    "full_name": "Aarav Mehta",
+    "email": "aarav.mehta@gmail.com",
+    "college": "NMIMS MPSTME, Mumbai",
+    "degree": "B.Tech",
+    "branch": "Computer Engineering",
+    "graduation_year": 2027,
+    "cgpa": 8.6,
+    "preferred_location": "Mumbai",
+    "available_from": "2027-01-04",
+    "internship_duration_months": 6,
+    "linkedin_url": "https://www.linkedin.com/in/aarav-mehta-example",
+    "github_url": null,
+    "skills": [
+      "Python",
+      "SQL"
+    ],
+    "phone": "+915598248052",
+    "collection_status": "completed",
+    "attempt_count": 1,
+    "last_contacted_at": "2026-11-14T14:58:26+05:30",
+    "notes": "[2026-11-14T14:58:26+05:30] AI agent (completed): Candidate confirmed identity, email and CGPA saved, declined GitHub optional field. Application completed. Collected: cgpa, email. Refused: github_url.",
+    "version": 3,
+    "updated_at": "2026-11-14T09:28:28+00:00"
+  },
+  "initial": {
+    "id": "c001",
+    "full_name": "Aarav Mehta",
+    "email": null,
+    "college": "NMIMS MPSTME, Mumbai",
+    "degree": "B.Tech",
+    "branch": "Computer Engineering",
+    "graduation_year": 2027,
+    "cgpa": null,
+    "preferred_location": "Mumbai",
+    "available_from": "2027-01-04",
+    "internship_duration_months": 6,
+    "linkedin_url": "https://www.linkedin.com/in/aarav-mehta-example",
+    "github_url": null,
+    "skills": [
+      "Python",
+      "SQL"
+    ],
+    "phone": "+915598248052",
+    "collection_status": "pending",
+    "attempt_count": 0,
+    "last_contacted_at": null,
+    "notes": null,
+    "version": 1,
+    "updated_at": "2026-11-14T08:39:13+00:00"
+  },
+  "transcript": [
+    {
+      "role": "agent",
+      "text": "Hi! I\u2019m the ACME internship team assistant. Could you please confirm that I\u2019m speaking with Aarav Mehta?",
+      "ts": "2026-11-14T14:58:20+05:30"
+    },
+    {
+      "role": "candidate",
+      "text": "yes that's me",
+      "ts": "2026-11-14T14:58:20+05:30"
+    },
+    {
+      "role": "agent",
+      "text": "Great! Could you share your email address and your CGPA (out of 10)?",
+      "ts": "2026-11-14T14:58:21+05:30"
+    },
+    {
+      "role": "candidate",
+      "text": "my email is aarav.mehta@gmail.com and cgpa is 8.6",
+      "ts": "2026-11-14T14:58:21+05:30"
+    },
+    {
+      "role": "agent",
+      "text": "Would you like to share a GitHub profile link? If not, just let me know and we\u2019ll finish up.",
+      "ts": "2026-11-14T14:58:24+05:30"
+    },
+    {
+      "role": "candidate",
+      "text": "no skip the optional ones",
+      "ts": "2026-11-14T14:58:24+05:30"
+    },
+    {
+      "role": "agent",
+      "text": "All set! Your application is complete. Have a great day!",
+      "ts": "2026-11-14T14:58:27+05:30"
+    }
+  ],
+  "trace": [
+    {
+      "t": "llm",
+      "ts": "2026-11-14T14:58:21+05:30",
+      "model": "openai/gpt-oss-120b",
+      "usage": {
+        "queue_time": 0.370378942,
+        "prompt_tokens": 1378,
+        "prompt_time": 0.039595023,
+        "completion_tokens": 55,
+        "completion_time": 0.139014598,
+        "total_tokens": 1433,
+        "total_time": 0.178609621,
+        "prompt_tokens_details": {
+          "cached_tokens": 768
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 19
+        }
+      },
+      "tool_calls": [
+        "confirm_identity"
+      ]
+    },
+    {
+      "t": "tool",
+      "ts": "2026-11-14T14:58:21+05:30",
+      "name": "confirm_identity",
+      "args": {
+        "confirmed": true,
+        "evidence": "yes that's me"
+      },
+      "result": {
+        "ok": true,
+        "identity": true
+      }
+    },
+    {
+      "t": "llm",
+      "ts": "2026-11-14T14:58:21+05:30",
+      "model": "openai/gpt-oss-120b",
+      "usage": {
+        "queue_time": 0.370423646,
+        "prompt_tokens": 1420,
+        "prompt_time": 0.034305611,
+        "completion_tokens": 44,
+        "completion_time": 0.090902104,
+        "total_tokens": 1464,
+        "total_time": 0.125207715,
+        "prompt_tokens_details": {
+          "cached_tokens": 768
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 17
+        }
+      },
+      "tool_calls": []
+    },
+    {
+      "t": "llm",
+      "ts": "2026-11-14T14:58:22+05:30",
+      "model": "openai/gpt-oss-120b",
+      "usage": {
+        "queue_time": 0.159593253,
+        "prompt_tokens": 1465,
+        "prompt_time": 0.029865541,
+        "completion_tokens": 125,
+        "completion_time": 0.682488761,
+        "total_tokens": 1590,
+        "total_time": 0.712354302,
+        "prompt_tokens_details": {
+          "cached_tokens": 768
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 10
+        }
+      },
+      "tool_calls": [
+        "save_fields"
+      ]
+    },
+    {
+      "t": "db",
+      "ts": "2026-11-14T14:58:24+05:30",
+      "method": "PATCH",
+      "path": "/v1/candidates/c001",
+      "request": {
+        "email": "aarav.mehta@gmail.com",
+        "cgpa": 8.6,
+        "collection_status": "in_progress"
+      },
+      "status": 200,
+      "response": {
+        "id": "c001",
+        "full_name": "Aarav Mehta",
+        "email": "aarav.mehta@gmail.com",
+        "college": "NMIMS MPSTME, Mumbai",
+        "degree": "B.Tech",
+        "branch": "Computer Engineering",
+        "graduation_year": 2027,
+        "cgpa": 8.6,
+        "preferred_location": "Mumbai",
+        "available_from": "2027-01-04",
+        "internship_duration_months": 6,
+        "linkedin_url": "https://www.linkedin.com/in/aarav-mehta-example",
+        "github_url": null,
+        "skills": [
+          "Python",
+          "SQL"
+        ],
+        "phone": "+915598248052",
+        "collection_status": "in_progress",
+        "attempt_count": 0,
+        "last_contacted_at": null,
+        "notes": null,
+        "version": 2,
+        "updated_at": "2026-11-14T09:28:25+00:00"
+      },
+      "ms": 1131,
+      "attempt": 0
+    },
+    {
+      "t": "save_ok",
+      "ts": "2026-11-14T14:58:24+05:30",
+      "fields": [
+        "email",
+        "cgpa",
+        "collection_status"
+      ]
+    },
+    {
+      "t": "tool",
+      "ts": "2026-11-14T14:58:24+05:30",
+      "name": "save_fields",
+      "args": {
+        "fields": [
+          {
+            "evidence": "my email is aarav.mehta@gmail.com and cgpa is 8.6",
+            "field": "email",
+            "value": "aarav.mehta@gmail.com"
+          },
+          {
+            "evidence": "my email is aarav.mehta@gmail.com and cgpa is 8.6",
+            "field": "cgpa",
+            "value": 8.6
+          }
+        ]
+      },
+      "result": {
+        "ok": true,
+        "results": [
+          {
+            "field": "email",
+            "status": "ok",
+            "value": "aarav.mehta@gmail.com"
+          },
+          {
+            "field": "cgpa",
+            "status": "ok",
+            "value": 8.6
+          }
+        ],
+        "still_todo": [],
+        "optional_empty": [
+          "github_url"
+        ]
+      }
+    },
+    {
+      "t": "llm",
+      "ts": "2026-11-14T14:58:24+05:30",
+      "model": "openai/gpt-oss-120b",
+      "usage": {
+        "queue_time": 0.317359693,
+        "prompt_tokens": 1671,
+        "prompt_time": 0.085994183,
+        "completion_tokens": 44,
+        "completion_time": 0.092430853,
+        "total_tokens": 1715,
+        "total_time": 0.178425036,
+        "completion_tokens_details": {
+          "reasoning_tokens": 11
+        }
+      },
+      "tool_calls": []
+    },
+    {
+      "t": "llm",
+      "ts": "2026-11-14T14:58:25+05:30",
+      "model": "openai/gpt-oss-120b",
+      "usage": {},
+      "tool_calls": [
+        "end_conversation"
+      ]
+    },
+    {
+      "t": "db",
+      "ts": "2026-11-14T14:58:26+05:30",
+      "method": "GET",
+      "path": "/v1/candidates/c001",
+      "request": null,
+      "status": 200,
+      "response": {
+        "id": "c001",
+        "full_name": "Aarav Mehta",
+        "email": "aarav.mehta@gmail.com",
+        "college": "NMIMS MPSTME, Mumbai",
+        "degree": "B.Tech",
+        "branch": "Computer Engineering",
+        "graduation_year": 2027,
+        "cgpa": 8.6,
+        "preferred_location": "Mumbai",
+        "available_from": "2027-01-04",
+        "internship_duration_months": 6,
+        "linkedin_url": "https://www.linkedin.com/in/aarav-mehta-example",
+        "github_url": null,
+        "skills": [
+          "Python",
+          "SQL"
+        ],
+        "phone": "+915598248052",
+        "collection_status": "in_progress",
+        "attempt_count": 0,
+        "last_contacted_at": null,
+        "notes": null,
+        "version": 2,
+        "updated_at": "2026-11-14T09:28:25+00:00"
+      },
+      "ms": 864,
+      "attempt": 0
+    },
+    {
+      "t": "db",
+      "ts": "2026-11-14T14:58:27+05:30",
+      "method": "PATCH",
+      "path": "/v1/candidates/c001",
+      "request": {
+        "collection_status": "completed",
+        "attempt_count": 1,
+        "last_contacted_at": "2026-11-14T14:58:26+05:30",
+        "notes": "[2026-11-14T14:58:26+05:30] AI agent (completed): Candidate confirmed identity, email and CGPA saved, declined GitHub optional field. Application completed. Collected: cgpa, email. Refused: github_url."
+      },
+      "status": 200,
+      "response": {
+        "id": "c001",
+        "full_name": "Aarav Mehta",
+        "email": "aarav.mehta@gmail.com",
+        "college": "NMIMS MPSTME, Mumbai",
+        "degree": "B.Tech",
+        "branch": "Computer Engineering",
+        "graduation_year": 2027,
+        "cgpa": 8.6,
+        "preferred_location": "Mumbai",
+        "available_from": "2027-01-04",
+        "internship_duration_months": 6,
+        "linkedin_url": "https://www.linkedin.com/in/aarav-mehta-example",
+        "github_url": null,
+        "skills": [
+          "Python",
+          "SQL"
+        ],
+        "phone": "+915598248052",
+        "collection_status": "completed",
+        "attempt_count": 1,
+        "last_contacted_at": "2026-11-14T14:58:26+05:30",
+        "notes": "[2026-11-14T14:58:26+05:30] AI agent (completed): Candidate confirmed identity, email and CGPA saved, declined GitHub optional field. Application completed. Collected: cgpa, email. Refused: github_url.",
+        "version": 3,
+        "updated_at": "2026-11-14T09:28:28+00:00"
+      },
+      "ms": 884,
+      "attempt": 0
+    },
+    {
+      "t": "save_ok",
+      "ts": "2026-11-14T14:58:27+05:30",
+      "fields": [
+        "collection_status",
+        "attempt_count",
+        "last_contacted_at",
+        "notes"
+      ]
+    },
+    {
+      "t": "tool",
+      "ts": "2026-11-14T14:58:27+05:30",
+      "name": "end_conversation",
+      "args": {
+        "final_message": "All set! Your application is complete. Have a great day!",
+        "outcome": "completed",
+        "summary": "Candidate confirmed identity, email and CGPA saved, declined GitHub optional field. Application completed.",
+        "refused_fields": [
+          "github_url"
+        ]
+      },
+      "result": {
+        "ok": true,
+        "message": "All set! Your application is complete. Have a great day!",
+        "outcome": "completed",
+        "db_write_ok": true
+      }
+    }
+  ],
+  "identity": true,
+  "saved": {
+    "email": {
+      "old": null,
+      "new": "aarav.mehta@gmail.com"
+    },
+    "cgpa": {
+      "old": null,
+      "new": 8.6
+    }
+  },
+  "verified": [],
+  "unsaved": {},
+  "autofix": {},
+  "refused": [],
+  "ended": true,
+  "outcome": "completed",
+  "started_at": "2026-11-14T14:58:20+05:30",
+  "turns": 3,
+  "plan": {
+    "missing": [
+      "email",
+      "cgpa"
+    ],
+    "invalid": [],
+    "confirm": [],
+    "autofix": {},
+    "optional_missing": [
+      "github_url"
+    ]
+  },
+  "final_write_ok": true
+}

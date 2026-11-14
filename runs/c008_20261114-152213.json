@@ -1,0 +1,598 @@
+{
+  "cid": "c008",
+  "record": {
+    "attempt_count": 50,
+    "last_contacted_at": "2026-11-14T15:22:13+05:30",
+    "notes": "[2026-11-14T15:22:13+05:30] AI agent (completed): Meera confirmed B.Tech Electronics & Telecommunication, VJTI Mumbai, grad Jan 2027, CGPA 8.3, provided LinkedIn and GitHub URLs. All mandatory fields saved; optional skills left empty. Collected: branch, cgpa, college, github_url, linkedin_url.",
+    "linkedin_url": "https://linkedin.com/in/meerajoshi",
+    "github_url": "https://github.com/meerajoshi",
+    "skills": null,
+    "collection_status": "completed",
+    "version": 5,
+    "id": "c008",
+    "full_name": "Meera Joshi",
+    "phone": "+919800000008",
+    "updated_at": "t",
+    "email": "x@gmail.com",
+    "college": "Veermata Jijabai Technological Institute",
+    "degree": "B.Tech",
+    "branch": "Electronics & Telecommunication",
+    "graduation_year": 2027,
+    "cgpa": 8.3,
+    "preferred_location": "Mumbai",
+    "available_from": "2027-06-01",
+    "internship_duration_months": 3
+  },
+  "initial": {
+    "attempt_count": 49,
+    "last_contacted_at": null,
+    "notes": null,
+    "linkedin_url": null,
+    "github_url": null,
+    "skills": null,
+    "collection_status": "pending",
+    "version": 1,
+    "id": "c008",
+    "full_name": "Meera Joshi",
+    "phone": "+919800000008",
+    "updated_at": "t",
+    "email": "x@gmail.com",
+    "college": "IIT Bombay",
+    "degree": "B.Tech",
+    "branch": null,
+    "graduation_year": 2027,
+    "cgpa": 8.4,
+    "preferred_location": "Mumbai",
+    "available_from": "2027-06-01",
+    "internship_duration_months": 3
+  },
+  "transcript": [
+    {
+      "role": "agent",
+      "text": "Hi Meera! I\u2019m Maya, the ACME internship team\u2019s chat assistant. Just checking\u2014are you the Meera Joshi who applied?",
+      "ts": "2026-11-14T15:20:20+05:30"
+    },
+    {
+      "role": "candidate",
+      "text": "Haan Maya! Main Meera Joshi, BBA grad 2025, 84% CGPA, GitHub repo: github.com/meerajoshi. :)",
+      "ts": "2026-11-14T15:20:21+05:30"
+    },
+    {
+      "role": "agent",
+      "text": "Thanks Meera! I see a mismatch with the degree and graduation year we have on file. Let\u2019s get this right \u2013 could you confirm your current degree (B.Tech?) and expected graduation year? If it\u2019s different, I\u2019ll note it for the team.",
+      "ts": "2026-11-14T15:20:46+05:30"
+    },
+    {
+      "role": "candidate",
+      "text": "Sorry Maya, typo earlier! I\u2019m B.Tech in Electronics & Telecommunication, Veermata Jijabai Technological Institute, graduating Jan 2027. 8.3 CGPA.",
+      "ts": "2026-11-14T15:20:46+05:30"
+    },
+    {
+      "role": "agent",
+      "text": "Sorry, I'm having a small technical hiccup on my side. Could you send that again in a moment?",
+      "ts": "2026-11-14T15:21:16+05:30"
+    },
+    {
+      "role": "candidate",
+      "text": "Sure! B.Tech Electronics & Telecommunication, VJTI Mumbai, graduating Jan\u202f2027, CGPA\u202f8.3/10. :)",
+      "ts": "2026-11-14T15:21:18+05:30"
+    },
+    {
+      "role": "agent",
+      "text": "Great, thanks! Do you have a LinkedIn profile or any other GitHub repo you'd like us to see? If not, just let me know and we\u2019ll finish up.",
+      "ts": "2026-11-14T15:21:37+05:30"
+    },
+    {
+      "role": "candidate",
+      "text": "Here\u2019s my GitHub: github.com/meerajoshi and LinkedIn: linkedin.com/in/meerajoshi. Let me know if you need anything else!",
+      "ts": "2026-11-14T15:21:37+05:30"
+    },
+    {
+      "role": "agent",
+      "text": "Thanks! We\u2019ll wrap up your application now. Have a great day!",
+      "ts": "2026-11-14T15:22:13+05:30"
+    }
+  ],
+  "trace": [
+    {
+      "t": "llm",
+      "ts": "2026-11-14T15:20:32+05:30",
+      "model": "openai/gpt-oss-20b",
+      "usage": {
+        "queue_time": 0.288507028,
+        "prompt_tokens": 1691,
+        "prompt_time": 0.114560838,
+        "completion_tokens": 42,
+        "completion_time": 0.042706909,
+        "total_tokens": 1733,
+        "total_time": 0.157267747,
+        "completion_tokens_details": {
+          "reasoning_tokens": 6
+        }
+      },
+      "tool_calls": [
+        "confirm_identity"
+      ]
+    },
+    {
+      "t": "tool",
+      "ts": "2026-11-14T15:20:32+05:30",
+      "name": "confirm_identity",
+      "args": {
+        "confirmed": true,
+        "evidence": "Haan Maya! Main Meera Joshi"
+      },
+      "result": {
+        "ok": true,
+        "identity": true
+      }
+    },
+    {
+      "t": "llm",
+      "ts": "2026-11-14T15:20:46+05:30",
+      "model": "openai/gpt-oss-120b",
+      "usage": {
+        "queue_time": 0.370825694,
+        "prompt_tokens": 1747,
+        "prompt_time": 0.071941911,
+        "completion_tokens": 95,
+        "completion_time": 0.199783979,
+        "total_tokens": 1842,
+        "total_time": 0.27172589,
+        "completion_tokens_details": {
+          "reasoning_tokens": 33
+        }
+      },
+      "tool_calls": []
+    },
+    {
+      "t": "llm",
+      "ts": "2026-11-14T15:20:51+05:30",
+      "model": "openai/gpt-oss-20b",
+      "usage": {
+        "queue_time": 0.367749985,
+        "prompt_tokens": 1848,
+        "prompt_time": 0.095151777,
+        "completion_tokens": 174,
+        "completion_time": 0.179288272,
+        "total_tokens": 2022,
+        "total_time": 0.274440049,
+        "completion_tokens_details": {
+          "reasoning_tokens": 23
+        }
+      },
+      "tool_calls": [
+        "save_fields"
+      ]
+    },
+    {
+      "t": "db",
+      "ts": "2026-11-14T15:20:51+05:30",
+      "method": "PATCH",
+      "path": "/v1/candidates/c008",
+      "request": {
+        "branch": "Electronics & Telecommunication",
+        "collection_status": "in_progress"
+      },
+      "status": 200,
+      "response": {
+        "version": 2
+      },
+      "ms": 1,
+      "attempt": 0
+    },
+    {
+      "t": "save_ok",
+      "ts": "2026-11-14T15:20:51+05:30",
+      "fields": [
+        "branch",
+        "collection_status"
+      ]
+    },
+    {
+      "t": "tool",
+      "ts": "2026-11-14T15:20:51+05:30",
+      "name": "save_fields",
+      "args": {
+        "fields": [
+          {
+            "confirmed": true,
+            "evidence": "I\u2019m B.Tech in Electronics & Telecommunication",
+            "field": "degree",
+            "value": "B.Tech"
+          },
+          {
+            "confirmed": true,
+            "evidence": "Electronics & Telecommunication",
+            "field": "branch",
+            "value": "Electronics & Telecommunication"
+          },
+          {
+            "confirmed": true,
+            "evidence": "Veermata Jijabai Technological Institute",
+            "field": "college",
+            "value": "Veermata Jijabai Technological Institute"
+          },
+          {
+            "confirmed": true,
+            "evidence": "graduating Jan 2027",
+            "field": "graduation_year",
+            "value": 2027
+          },
+          {
+            "confirmed": true,
+            "evidence": "8.3 CGPA",
+            "field": "cgpa",
+            "value": 8.3
+          }
+        ]
+      },
+      "result": {
+        "ok": true,
+        "results": [
+          {
+            "field": "degree",
+            "status": "unchanged",
+            "note": "already stored; nothing written"
+          },
+          {
+            "field": "branch",
+            "status": "ok",
+            "value": "Electronics & Telecommunication"
+          },
+          {
+            "field": "college",
+            "status": "protected",
+            "error": "already has a valid value (IIT Bombay); only overwrite if the candidate says it changed (overwrite=true)"
+          },
+          {
+            "field": "graduation_year",
+            "status": "unchanged",
+            "note": "already stored; nothing written"
+          },
+          {
+            "field": "cgpa",
+            "status": "protected",
+            "error": "already has a valid value (8.4); only overwrite if the candidate says it changed (overwrite=true)"
+          }
+        ],
+        "still_todo": [],
+        "optional_empty": [
+          "linkedin_url",
+          "github_url",
+          "skills"
+        ]
+      }
+    },
+    {
+      "t": "llm_error",
+      "ts": "2026-11-14T15:21:16+05:30",
+      "error": "HTTP 429: {\"error\":{\"message\":\"Rate limit reached for model `openai/gpt-oss-20b` in organization `org_01kcvbvs9bfv3vny7yp9ed14q2` service tier `on_demand` on tokens per minute (TPM): Limit 8000, Used 6673, Requested 2343. Please try again in 7.62s. Need more tokens? Upgrade to Dev Tier today at http"
+    },
+    {
+      "t": "llm",
+      "ts": "2026-11-14T15:21:30+05:30",
+      "model": "openai/gpt-oss-120b",
+      "usage": {
+        "queue_time": 0.319785776,
+        "prompt_tokens": 2279,
+        "prompt_time": 0.074610067,
+        "completion_tokens": 113,
+        "completion_time": 0.408580407,
+        "total_tokens": 2392,
+        "total_time": 0.483190474,
+        "prompt_tokens_details": {
+          "cached_tokens": 1024
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 17
+        }
+      },
+      "tool_calls": [
+        "save_fields"
+      ]
+    },
+    {
+      "t": "db",
+      "ts": "2026-11-14T15:21:30+05:30",
+      "method": "PATCH",
+      "path": "/v1/candidates/c008",
+      "request": {
+        "college": "Veermata Jijabai Technological Institute",
+        "cgpa": 8.3
+      },
+      "status": 200,
+      "response": {
+        "version": 3
+      },
+      "ms": 1,
+      "attempt": 0
+    },
+    {
+      "t": "save_ok",
+      "ts": "2026-11-14T15:21:30+05:30",
+      "fields": [
+        "college",
+        "cgpa"
+      ]
+    },
+    {
+      "t": "tool",
+      "ts": "2026-11-14T15:21:30+05:30",
+      "name": "save_fields",
+      "args": {
+        "fields": [
+          {
+            "confirmed": true,
+            "evidence": "VJTI Mumbai",
+            "field": "college",
+            "overwrite": true,
+            "value": "Veermata Jijabai Technological Institute"
+          },
+          {
+            "confirmed": true,
+            "evidence": "CGPA\u202f8.3/10",
+            "field": "cgpa",
+            "overwrite": true,
+            "value": 8.3
+          }
+        ]
+      },
+      "result": {
+        "ok": true,
+        "results": [
+          {
+            "field": "college",
+            "status": "ok",
+            "value": "Veermata Jijabai Technological Institute"
+          },
+          {
+            "field": "cgpa",
+            "status": "ok",
+            "value": 8.3
+          }
+        ],
+        "still_todo": [],
+        "optional_empty": [
+          "linkedin_url",
+          "github_url",
+          "skills"
+        ]
+      }
+    },
+    {
+      "t": "llm",
+      "ts": "2026-11-14T15:21:37+05:30",
+      "model": "openai/gpt-oss-20b",
+      "usage": {
+        "queue_time": 0.285146377,
+        "prompt_tokens": 2464,
+        "prompt_time": 0.145856228,
+        "completion_tokens": 40,
+        "completion_time": 0.04188515,
+        "total_tokens": 2504,
+        "total_time": 0.187741378
+      },
+      "tool_calls": []
+    },
+    {
+      "t": "llm",
+      "ts": "2026-11-14T15:21:50+05:30",
+      "model": "openai/gpt-oss-120b",
+      "usage": {
+        "queue_time": 0.159694689,
+        "prompt_tokens": 2543,
+        "prompt_time": 0.129315386,
+        "completion_tokens": 117,
+        "completion_time": 0.248513731,
+        "total_tokens": 2660,
+        "total_time": 0.377829117,
+        "completion_tokens_details": {
+          "reasoning_tokens": 20
+        }
+      },
+      "tool_calls": [
+        "save_fields"
+      ]
+    },
+    {
+      "t": "db",
+      "ts": "2026-11-14T15:21:50+05:30",
+      "method": "PATCH",
+      "path": "/v1/candidates/c008",
+      "request": {
+        "github_url": "https://github.com/meerajoshi",
+        "linkedin_url": "https://linkedin.com/in/meerajoshi"
+      },
+      "status": 200,
+      "response": {
+        "version": 4
+      },
+      "ms": 1,
+      "attempt": 0
+    },
+    {
+      "t": "save_ok",
+      "ts": "2026-11-14T15:21:50+05:30",
+      "fields": [
+        "github_url",
+        "linkedin_url"
+      ]
+    },
+    {
+      "t": "tool",
+      "ts": "2026-11-14T15:21:50+05:30",
+      "name": "save_fields",
+      "args": {
+        "fields": [
+          {
+            "confirmed": true,
+            "evidence": "github.com/meerajoshi",
+            "field": "github_url",
+            "value": "https://github.com/meerajoshi"
+          },
+          {
+            "confirmed": true,
+            "evidence": "linkedin.com/in/meerajoshi",
+            "field": "linkedin_url",
+            "value": "https://linkedin.com/in/meerajoshi"
+          }
+        ]
+      },
+      "result": {
+        "ok": true,
+        "results": [
+          {
+            "field": "github_url",
+            "status": "ok",
+            "value": "https://github.com/meerajoshi"
+          },
+          {
+            "field": "linkedin_url",
+            "status": "ok",
+            "value": "https://linkedin.com/in/meerajoshi"
+          }
+        ],
+        "still_todo": [],
+        "optional_empty": [
+          "skills"
+        ]
+      }
+    },
+    {
+      "t": "llm",
+      "ts": "2026-11-14T15:22:13+05:30",
+      "model": "openai/gpt-oss-120b",
+      "usage": {
+        "queue_time": 0.157021815,
+        "prompt_tokens": 2748,
+        "prompt_time": 0.116063276,
+        "completion_tokens": 203,
+        "completion_time": 0.421851236,
+        "total_tokens": 2951,
+        "total_time": 0.537914512,
+        "completion_tokens_details": {
+          "reasoning_tokens": 37
+        }
+      },
+      "tool_calls": [
+        "end_conversation"
+      ]
+    },
+    {
+      "t": "db",
+      "ts": "2026-11-14T15:22:13+05:30",
+      "method": "GET",
+      "path": "/v1/candidates/c008",
+      "request": null,
+      "status": 200,
+      "response": {
+        "version": 4
+      },
+      "ms": 1,
+      "attempt": 0
+    },
+    {
+      "t": "db",
+      "ts": "2026-11-14T15:22:13+05:30",
+      "method": "PATCH",
+      "path": "/v1/candidates/c008",
+      "request": {
+        "collection_status": "completed",
+        "attempt_count": 50,
+        "last_contacted_at": "2026-11-14T15:22:13+05:30",
+        "notes": "[2026-11-14T15:22:13+05:30] AI agent (completed): Meera confirmed B.Tech Electronics & Telecommunication, VJTI Mumbai, grad Jan 2027, CGPA 8.3, provided LinkedIn and GitHub URLs. All mandatory fields saved; optional skills left empty. Collected: branch, cgpa, college, github_url, linkedin_url."
+      },
+      "status": 200,
+      "response": {
+        "version": 5
+      },
+      "ms": 1,
+      "attempt": 0
+    },
+    {
+      "t": "save_ok",
+      "ts": "2026-11-14T15:22:13+05:30",
+      "fields": [
+        "collection_status",
+        "attempt_count",
+        "last_contacted_at",
+        "notes"
+      ]
+    },
+    {
+      "t": "tool",
+      "ts": "2026-11-14T15:22:13+05:30",
+      "name": "end_conversation",
+      "args": {
+        "final_message": "Thanks! We\u2019ll wrap up your application now. Have a great day!",
+        "outcome": "completed",
+        "summary": "Meera confirmed B.Tech Electronics & Telecommunication, VJTI Mumbai, grad Jan 2027, CGPA 8.3, provided LinkedIn and GitHub URLs. All mandatory fields saved; optional skills left empty."
+      },
+      "result": {
+        "ok": true,
+        "message": "Thanks! We\u2019ll wrap up your application now. Have a great day!",
+        "outcome": "completed",
+        "db_write_ok": true
+      }
+    }
+  ],
+  "identity": true,
+  "saved": {
+    "branch": {
+      "old": null,
+      "new": "Electronics & Telecommunication",
+      "evidence": "Electronics & Telecommunication",
+      "ts": "2026-11-14T15:20:51+05:30"
+    },
+    "college": {
+      "old": "IIT Bombay",
+      "new": "Veermata Jijabai Technological Institute",
+      "evidence": "VJTI Mumbai",
+      "ts": "2026-11-14T15:21:30+05:30"
+    },
+    "cgpa": {
+      "old": 8.4,
+      "new": 8.3,
+      "evidence": "CGPA\u202f8.3/10",
+      "ts": "2026-11-14T15:21:30+05:30"
+    },
+    "github_url": {
+      "old": null,
+      "new": "https://github.com/meerajoshi",
+      "evidence": "github.com/meerajoshi",
+      "ts": "2026-11-14T15:21:50+05:30"
+    },
+    "linkedin_url": {
+      "old": null,
+      "new": "https://linkedin.com/in/meerajoshi",
+      "evidence": "linkedin.com/in/meerajoshi",
+      "ts": "2026-11-14T15:21:50+05:30"
+    }
+  },
+  "verified": [],
+  "unsaved": {},
+  "autofix": {},
+  "refused": [],
+  "stalls": 0,
+  "follow_up_hint": false,
+  "ended": true,
+  "outcome": "completed",
+  "started_at": "2026-11-14T15:20:18+05:30",
+  "turns": 4,
+  "plan": {
+    "missing": [
+      "branch"
+    ],
+    "invalid": [],
+    "confirm": [],
+    "autofix": {},
+    "optional_missing": [
+      "linkedin_url",
+      "github_url",
+      "skills"
+    ]
+  },
+  "_llm_failed": false,
+  "final_write_ok": true
+}

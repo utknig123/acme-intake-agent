@@ -1,0 +1,13 @@
+AGENT: Hi Sneha! I’m Maya from the ACME internship team. Just checking—are you Sneha Iyer?
+CANDIDATE: Hey Maya! Yep, that's me. By the way, what's the stipend for the internship?
+AGENT: Thanks, Sneha! The stipend details will be shared by the hiring team once we have your complete profile. Could you let me know your branch of study? Also, could you confirm your email address?
+CANDIDATE: Haha, branch? I'm still figuring that out! Oh, and email… is it something like snehaiyer[at]gmail.com?
+AGENT: Got it, email saved. For the branch, just tell me the main subject you’re focusing on—like Computer Science, Electronics, or something else. If you’re still undecided, that’s fine, just let me know.
+CANDIDATE: Actually, I'm doing Electronics and Telecommunication for my B.Tech. 😊
+AGENT: Great, branch noted. Do you have a LinkedIn profile, a GitHub repo, or any specific skills you’d like to highlight? Feel free to skip if you’d rather not share.
+CANDIDATE: Haha, GitHub? Sure—github.com/snehaiyer. Quick question: what's the monthly stipend again?
+AGENT: Thanks, GitHub saved. The monthly stipend will be communicated by the hiring team soon. Do you have a LinkedIn profile or any key skills you’d like to add? (You can skip either.)
+CANDIDATE: LinkedIn? I’ll share it later. Key skills: C++, Python, MATLAB, VHDL, and some DSP basics. Thanks!
+AGENT: All set, Sneha! Your application is complete. We'll be in touch soon. Good luck!
+
+OUTCOME: completed

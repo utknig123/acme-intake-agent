@@ -1,0 +1,704 @@
+{
+  "cid": "c004",
+  "record": {
+    "attempt_count": 1,
+    "last_contacted_at": "2026-11-14T15:18:50+05:30",
+    "notes": "[2026-11-14T15:18:50+05:30] AI agent (in_progress): Chat ended early (persona script ended); partial data saved. Candidate has not suggested a time. Collected: branch, email.",
+    "linkedin_url": null,
+    "github_url": null,
+    "skills": null,
+    "collection_status": "in_progress",
+    "version": 4,
+    "id": "c004",
+    "full_name": "Sneha Iyer",
+    "phone": "+919800000004",
+    "updated_at": "t",
+    "email": "snehaiyer@gmail.com",
+    "college": "IIT Bombay",
+    "degree": "B.Tech",
+    "branch": "Electronics and Telecommunication",
+    "graduation_year": 2027,
+    "cgpa": 8.4,
+    "preferred_location": "Mumbai",
+    "available_from": "2027-06-01",
+    "internship_duration_months": 3
+  },
+  "initial": {
+    "attempt_count": 0,
+    "last_contacted_at": null,
+    "notes": null,
+    "linkedin_url": null,
+    "github_url": null,
+    "skills": null,
+    "collection_status": "pending",
+    "version": 1,
+    "id": "c004",
+    "full_name": "Sneha Iyer",
+    "phone": "+919800000004",
+    "updated_at": "t",
+    "email": "sneha@gmial.com",
+    "college": "IIT Bombay",
+    "degree": "B.Tech",
+    "branch": null,
+    "graduation_year": 2027,
+    "cgpa": 8.4,
+    "preferred_location": "Mumbai",
+    "available_from": "2027-06-01",
+    "internship_duration_months": 3
+  },
+  "transcript": [
+    {
+      "role": "agent",
+      "text": "Hi Sneha! I\u2019m Maya from the ACME internship team. Just checking\u2014are you Sneha Iyer?",
+      "ts": "2026-11-14T15:17:57+05:30"
+    },
+    {
+      "role": "candidate",
+      "text": "Hey Maya! Yep, that\u2019s me\u2014though I\u2019m still figuring out if I\u2019m a coffee or a tea person. \ud83d\ude0a",
+      "ts": "2026-11-14T15:17:57+05:30"
+    },
+    {
+      "role": "agent",
+      "text": "Got it, Sneha! Just checking\u2014your email is sneha@gmial.com, right? Also, could you tell me your branch of study?",
+      "ts": "2026-11-14T15:17:59+05:30"
+    },
+    {
+      "role": "candidate",
+      "text": "Oops, almost typed the wrong email! By the way, do you know if ACME offers remote work options?",
+      "ts": "2026-11-14T15:18:00+05:30"
+    },
+    {
+      "role": "agent",
+      "text": "No worries! What's the correct email you\u2019d like us to use? And about remote work, the team will share those options soon. Also, could you let me know your branch of study?",
+      "ts": "2026-11-14T15:18:01+05:30"
+    },
+    {
+      "role": "candidate",
+      "text": "Haha, I swear my inbox is a maze\u2014maybe it\u2019s hiding the email in a secret folder! By the way, any chance the internship includes free snacks?",
+      "ts": "2026-11-14T15:18:01+05:30"
+    },
+    {
+      "role": "agent",
+      "text": "Got it, Sneha! Please share the correct email address you\u2019d like us to use. Also, what\u2019s your branch of study?",
+      "ts": "2026-11-14T15:18:03+05:30"
+    },
+    {
+      "role": "candidate",
+      "text": "Sure! My email is snehaiyer@gmail.com and I\u2019m studying Electronics and Telecommunication.",
+      "ts": "2026-11-14T15:18:04+05:30"
+    },
+    {
+      "role": "agent",
+      "text": "Thanks! Just to confirm, you\u2019d like us to update your email to snehaiyer@gmail.com, replacing the old one?",
+      "ts": "2026-11-14T15:18:10+05:30"
+    },
+    {
+      "role": "candidate",
+      "text": "Yep, that\u2019s the one\u2014please update it to snehaiyer@gmail.com. Thanks!",
+      "ts": "2026-11-14T15:18:11+05:30"
+    },
+    {
+      "role": "agent",
+      "text": "Sorry, I'm having a small technical hiccup. Could you send that again in a moment?",
+      "ts": "2026-11-14T15:18:12+05:30"
+    },
+    {
+      "role": "candidate",
+      "text": "Sure thing\u2014my email is snehaiyer@gmail.com. Let me know if you need anything else!",
+      "ts": "2026-11-14T15:18:12+05:30"
+    },
+    {
+      "role": "agent",
+      "text": "Sorry, I'm having a small technical hiccup. Could you send that again in a moment?",
+      "ts": "2026-11-14T15:18:13+05:30"
+    },
+    {
+      "role": "candidate",
+      "text": "No problem! snehaiyer@gmail.com\u2014just ping me whenever you\u2019re ready. \ud83d\ude80",
+      "ts": "2026-11-14T15:18:17+05:30"
+    },
+    {
+      "role": "agent",
+      "text": "Sorry, I'm having a small technical hiccup. Could you send that again in a moment?",
+      "ts": "2026-11-14T15:18:17+05:30"
+    },
+    {
+      "role": "candidate",
+      "text": "snehaiyer@gmail.com. Let me know when it works!",
+      "ts": "2026-11-14T15:18:21+05:30"
+    },
+    {
+      "role": "agent",
+      "text": "Sorry, I'm having a small technical hiccup. Could you send that again in a moment?",
+      "ts": "2026-11-14T15:18:29+05:30"
+    },
+    {
+      "role": "candidate",
+      "text": "Haha, tech glitches are the universe\u2019s way of saying \u201ctake a coffee break\u201d! By the way, what's the stipend range for the internship?",
+      "ts": "2026-11-14T15:18:30+05:30"
+    },
+    {
+      "role": "agent",
+      "text": "Sorry, I'm having a small technical hiccup. Could you send that again in a moment?",
+      "ts": "2026-11-14T15:18:31+05:30"
+    },
+    {
+      "role": "candidate",
+      "text": "snehaiyer@gmail.com. Let me know if that works!",
+      "ts": "2026-11-14T15:18:31+05:30"
+    },
+    {
+      "role": "agent",
+      "text": "Sorry, I'm having a small technical hiccup. Could you send that again in a moment?",
+      "ts": "2026-11-14T15:18:32+05:30"
+    },
+    {
+      "role": "candidate",
+      "text": "Sure! Email is snehaiyer@gmail.com. By the way, any chance the internship could be remote?",
+      "ts": "2026-11-14T15:18:35+05:30"
+    },
+    {
+      "role": "agent",
+      "text": "Sorry, I'm having a small technical hiccup. Could you send that again in a moment?",
+      "ts": "2026-11-14T15:18:35+05:30"
+    },
+    {
+      "role": "candidate",
+      "text": "snehaiyer@gmail.com. Let me know if it comes through this time!",
+      "ts": "2026-11-14T15:18:37+05:30"
+    },
+    {
+      "role": "agent",
+      "text": "Sorry, I'm having a small technical hiccup. Could you send that again in a moment?",
+      "ts": "2026-11-14T15:18:38+05:30"
+    },
+    {
+      "role": "candidate",
+      "text": "Haha, no worries! While we wait, could you share the stipend details for the internship?",
+      "ts": "2026-11-14T15:18:43+05:30"
+    },
+    {
+      "role": "agent",
+      "text": "Sorry, I'm having a small technical hiccup. Could you send that again in a moment?",
+      "ts": "2026-11-14T15:18:49+05:30"
+    },
+    {
+      "role": "candidate",
+      "text": "snehaiyer@gmail.com. Let me know if it comes through now!",
+      "ts": "2026-11-14T15:18:50+05:30"
+    },
+    {
+      "role": "agent",
+      "text": "Sorry, I'm having a small technical hiccup. Could you send that again in a moment?",
+      "ts": "2026-11-14T15:18:50+05:30"
+    }
+  ],
+  "trace": [
+    {
+      "t": "llm",
+      "ts": "2026-11-14T15:17:58+05:30",
+      "model": "openai/gpt-oss-120b",
+      "usage": {
+        "queue_time": 0.369966379,
+        "prompt_tokens": 1702,
+        "prompt_time": 0.091056966,
+        "completion_tokens": 68,
+        "completion_time": 0.142404343,
+        "total_tokens": 1770,
+        "total_time": 0.233461309,
+        "completion_tokens_details": {
+          "reasoning_tokens": 11
+        }
+      },
+      "tool_calls": [
+        "confirm_identity"
+      ]
+    },
+    {
+      "t": "tool",
+      "ts": "2026-11-14T15:17:58+05:30",
+      "name": "confirm_identity",
+      "args": {
+        "confirmed": true,
+        "evidence": "Hey Maya! Yep, that\u2019s me\u2014though I\u2019m still figuring out if I\u2019m a coffee or a tea person."
+      },
+      "result": {
+        "ok": true,
+        "identity": true
+      }
+    },
+    {
+      "t": "llm",
+      "ts": "2026-11-14T15:17:59+05:30",
+      "model": "openai/gpt-oss-120b",
+      "usage": {
+        "queue_time": 0.317845675,
+        "prompt_tokens": 1787,
+        "prompt_time": 0.084830271,
+        "completion_tokens": 65,
+        "completion_time": 0.13491553,
+        "total_tokens": 1852,
+        "total_time": 0.219745801,
+        "completion_tokens_details": {
+          "reasoning_tokens": 24
+        }
+      },
+      "tool_calls": []
+    },
+    {
+      "t": "llm",
+      "ts": "2026-11-14T15:18:01+05:30",
+      "model": "openai/gpt-oss-120b",
+      "usage": {
+        "queue_time": 0.368767094,
+        "prompt_tokens": 1852,
+        "prompt_time": 0.080538251,
+        "completion_tokens": 78,
+        "completion_time": 0.161413545,
+        "total_tokens": 1930,
+        "total_time": 0.241951796,
+        "completion_tokens_details": {
+          "reasoning_tokens": 30
+        }
+      },
+      "tool_calls": []
+    },
+    {
+      "t": "llm",
+      "ts": "2026-11-14T15:18:02+05:30",
+      "model": "openai/gpt-oss-20b",
+      "usage": {
+        "queue_time": 0.285319836,
+        "prompt_tokens": 1967,
+        "prompt_time": 0.098178768,
+        "completion_tokens": 73,
+        "completion_time": 0.083827086,
+        "total_tokens": 2040,
+        "total_time": 0.182005854,
+        "completion_tokens_details": {
+          "reasoning_tokens": 23
+        }
+      },
+      "tool_calls": [
+        "save_fields"
+      ]
+    },
+    {
+      "t": "tool",
+      "ts": "2026-11-14T15:18:02+05:30",
+      "name": "save_fields",
+      "args": {
+        "fields": [
+          {
+            "confirmed": false,
+            "evidence": "Oops, almost typed the wrong email!",
+            "field": "email",
+            "value": "sneha@gmial.com"
+          }
+        ]
+      },
+      "result": {
+        "ok": true,
+        "results": [
+          {
+            "field": "email",
+            "status": "rejected",
+            "error": "email does not appear in the quoted text"
+          }
+        ],
+        "still_todo": [
+          "branch",
+          "email"
+        ],
+        "optional_empty": [
+          "linkedin_url",
+          "github_url",
+          "skills"
+        ]
+      }
+    },
+    {
+      "t": "llm",
+      "ts": "2026-11-14T15:18:03+05:30",
+      "model": "openai/gpt-oss-20b",
+      "usage": {
+        "queue_time": 0.284770817,
+        "prompt_tokens": 2089,
+        "prompt_time": 0.115278457,
+        "completion_tokens": 47,
+        "completion_time": 0.050676124,
+        "total_tokens": 2136,
+        "total_time": 0.165954581,
+        "completion_tokens_details": {
+          "reasoning_tokens": 10
+        }
+      },
+      "tool_calls": []
+    },
+    {
+      "t": "llm",
+      "ts": "2026-11-14T15:18:05+05:30",
+      "model": "openai/gpt-oss-20b",
+      "usage": {
+        "queue_time": 0.315425283,
+        "prompt_tokens": 2152,
+        "prompt_time": 0.115251902,
+        "completion_tokens": 77,
+        "completion_time": 0.078043041,
+        "total_tokens": 2229,
+        "total_time": 0.193294943,
+        "completion_tokens_details": {
+          "reasoning_tokens": 8
+        }
+      },
+      "tool_calls": [
+        "save_fields"
+      ]
+    },
+    {
+      "t": "db",
+      "ts": "2026-11-14T15:18:05+05:30",
+      "method": "PATCH",
+      "path": "/v1/candidates/c004",
+      "request": {
+        "branch": "Electronics and Telecommunication",
+        "collection_status": "in_progress"
+      },
+      "status": 200,
+      "response": {
+        "version": 2
+      },
+      "ms": 1,
+      "attempt": 0
+    },
+    {
+      "t": "save_ok",
+      "ts": "2026-11-14T15:18:05+05:30",
+      "fields": [
+        "branch",
+        "collection_status"
+      ]
+    },
+    {
+      "t": "tool",
+      "ts": "2026-11-14T15:18:05+05:30",
+      "name": "save_fields",
+      "args": {
+        "fields": [
+          {
+            "evidence": "My email is snehaiyer@gmail.com",
+            "field": "email",
+            "value": "snehaiyer@gmail.com"
+          },
+          {
+            "evidence": "I\u2019m studying Electronics and Telecommunication",
+            "field": "branch",
+            "value": "Electronics and Telecommunication"
+          }
+        ]
+      },
+      "result": {
+        "ok": true,
+        "results": [
+          {
+            "field": "email",
+            "status": "protected",
+            "error": "already has a valid value (sneha@gmial.com); only overwrite if the candidate says it changed (overwrite=true)"
+          },
+          {
+            "field": "branch",
+            "status": "ok",
+            "value": "Electronics and Telecommunication"
+          }
+        ],
+        "still_todo": [
+          "email"
+        ],
+        "optional_empty": [
+          "linkedin_url",
+          "github_url",
+          "skills"
+        ]
+      }
+    },
+    {
+      "t": "llm",
+      "ts": "2026-11-14T15:18:10+05:30",
+      "model": "openai/gpt-oss-20b",
+      "usage": {
+        "queue_time": 0.157330213,
+        "prompt_tokens": 2346,
+        "prompt_time": 0.126197688,
+        "completion_tokens": 43,
+        "completion_time": 0.044035092,
+        "total_tokens": 2389,
+        "total_time": 0.17023278,
+        "completion_tokens_details": {
+          "reasoning_tokens": 7
+        }
+      },
+      "tool_calls": []
+    },
+    {
+      "t": "llm_error",
+      "ts": "2026-11-14T15:18:12+05:30",
+      "error": "HTTP 429: {\"error\":{\"message\":\"Rate limit reached for model `openai/gpt-oss-20b` in organization `org_01kcvbvs9bfv3vny7yp9ed14q2` service tier `on_demand` on tokens per minute (TPM): Limit 8000, Used 7514, Requested 2442. Please try again in 14.67s. Need more tokens? Upgrade to Dev Tier today at htt"
+    },
+    {
+      "t": "llm_error",
+      "ts": "2026-11-14T15:18:13+05:30",
+      "error": "HTTP 429: {\"error\":{\"message\":\"Rate limit reached for model `openai/gpt-oss-20b` in organization `org_01kcvbvs9bfv3vny7yp9ed14q2` service tier `on_demand` on tokens per minute (TPM): Limit 8000, Used 7363, Requested 2484. Please try again in 13.8525s. Need more tokens? Upgrade to Dev Tier today at h"
+    },
+    {
+      "t": "llm_error",
+      "ts": "2026-11-14T15:18:17+05:30",
+      "error": "HTTP 429: {\"error\":{\"message\":\"Rate limit reached for model `openai/gpt-oss-20b` in organization `org_01kcvbvs9bfv3vny7yp9ed14q2` service tier `on_demand` on tokens per minute (TPM): Limit 8000, Used 6777, Requested 2680. Please try again in 10.9275s. Need more tokens? Upgrade to Dev Tier today at h"
+    },
+    {
+      "t": "llm",
+      "ts": "2026-11-14T15:18:28+05:30",
+      "model": "openai/gpt-oss-20b",
+      "usage": {
+        "queue_time": 0.153827414,
+        "prompt_tokens": 2468,
+        "prompt_time": 0.136239276,
+        "completion_tokens": 53,
+        "completion_time": 0.056732952,
+        "total_tokens": 2521,
+        "total_time": 0.192972228,
+        "completion_tokens_details": {
+          "reasoning_tokens": 6
+        }
+      },
+      "tool_calls": [
+        "save_fields"
+      ]
+    },
+    {
+      "t": "db",
+      "ts": "2026-11-14T15:18:28+05:30",
+      "method": "PATCH",
+      "path": "/v1/candidates/c004",
+      "request": {
+        "email": "snehaiyer@gmail.com"
+      },
+      "status": 200,
+      "response": {
+        "version": 3
+      },
+      "ms": 1,
+      "attempt": 0
+    },
+    {
+      "t": "save_ok",
+      "ts": "2026-11-14T15:18:28+05:30",
+      "fields": [
+        "email"
+      ]
+    },
+    {
+      "t": "tool",
+      "ts": "2026-11-14T15:18:28+05:30",
+      "name": "save_fields",
+      "args": {
+        "fields": [
+          {
+            "evidence": "snehaiyer@gmail.com",
+            "field": "email",
+            "overwrite": true,
+            "value": "snehaiyer@gmail.com"
+          }
+        ]
+      },
+      "result": {
+        "ok": true,
+        "results": [
+          {
+            "field": "email",
+            "status": "ok",
+            "value": "snehaiyer@gmail.com"
+          }
+        ],
+        "still_todo": [],
+        "optional_empty": [
+          "linkedin_url",
+          "github_url",
+          "skills"
+        ]
+      }
+    },
+    {
+      "t": "llm_error",
+      "ts": "2026-11-14T15:18:29+05:30",
+      "error": "HTTP 429: {\"error\":{\"message\":\"Rate limit reached for model `openai/gpt-oss-20b` in organization `org_01kcvbvs9bfv3vny7yp9ed14q2` service tier `on_demand` on tokens per minute (TPM): Limit 8000, Used 7730, Requested 2784. Please try again in 18.854999999s. Need more tokens? Upgrade to Dev Tier today"
+    },
+    {
+      "t": "llm_error",
+      "ts": "2026-11-14T15:18:31+05:30",
+      "error": "HTTP 429: {\"error\":{\"message\":\"Rate limit reached for model `openai/gpt-oss-20b` in organization `org_01kcvbvs9bfv3vny7yp9ed14q2` service tier `on_demand` on tokens per minute (TPM): Limit 8000, Used 7489, Requested 2615. Please try again in 15.78s. Need more tokens? Upgrade to Dev Tier today at htt"
+    },
+    {
+      "t": "llm_error",
+      "ts": "2026-11-14T15:18:32+05:30",
+      "error": "HTTP 429: {\"error\":{\"message\":\"Rate limit reached for model `openai/gpt-oss-20b` in organization `org_01kcvbvs9bfv3vny7yp9ed14q2` service tier `on_demand` on tokens per minute (TPM): Limit 8000, Used 7333, Requested 2666. Please try again in 14.9925s. Need more tokens? Upgrade to Dev Tier today at h"
+    },
+    {
+      "t": "llm_error",
+      "ts": "2026-11-14T15:18:35+05:30",
+      "error": "HTTP 429: {\"error\":{\"message\":\"Rate limit reached for model `openai/gpt-oss-20b` in organization `org_01kcvbvs9bfv3vny7yp9ed14q2` service tier `on_demand` on tokens per minute (TPM): Limit 8000, Used 6896, Requested 2715. Please try again in 12.0825s. Need more tokens? Upgrade to Dev Tier today at h"
+    },
+    {
+      "t": "llm_error",
+      "ts": "2026-11-14T15:18:38+05:30",
+      "error": "HTTP 429: {\"error\":{\"message\":\"Rate limit reached for model `openai/gpt-oss-20b` in organization `org_01kcvbvs9bfv3vny7yp9ed14q2` service tier `on_demand` on tokens per minute (TPM): Limit 8000, Used 6561, Requested 2716. Please try again in 9.577499999s. Need more tokens? Upgrade to Dev Tier today "
+    },
+    {
+      "t": "llm",
+      "ts": "2026-11-14T15:18:49+05:30",
+      "model": "openai/gpt-oss-20b",
+      "usage": {
+        "queue_time": 0.347179903,
+        "prompt_tokens": 2540,
+        "prompt_time": 0.190966499,
+        "completion_tokens": 98,
+        "completion_time": 0.103850383,
+        "total_tokens": 2638,
+        "total_time": 0.294816882,
+        "completion_tokens_details": {
+          "reasoning_tokens": 15
+        }
+      },
+      "tool_calls": [
+        "end_conversation"
+      ]
+    },
+    {
+      "t": "db",
+      "ts": "2026-11-14T15:18:49+05:30",
+      "method": "GET",
+      "path": "/v1/candidates/c004",
+      "request": null,
+      "status": 200,
+      "response": {
+        "version": 3
+      },
+      "ms": 1,
+      "attempt": 0
+    },
+    {
+      "t": "tool",
+      "ts": "2026-11-14T15:18:49+05:30",
+      "name": "end_conversation",
+      "args": {
+        "final_message": "Thanks for your patience, Sneha! We\u2019ll get back to you soon.",
+        "follow_up_time": "2026-11-15T10:00:00+05:30",
+        "outcome": "in_progress",
+        "summary": "Candidate confirmed email and branch. No further mandatory fields. Awaiting next steps."
+      },
+      "result": {
+        "ok": false,
+        "error": "all mandatory fields are valid now; use outcome=completed"
+      }
+    },
+    {
+      "t": "llm_error",
+      "ts": "2026-11-14T15:18:49+05:30",
+      "error": "HTTP 429: {\"error\":{\"message\":\"Rate limit reached for model `openai/gpt-oss-20b` in organization `org_01kcvbvs9bfv3vny7yp9ed14q2` service tier `on_demand` on tokens per minute (TPM): Limit 8000, Used 7653, Requested 2718. Please try again in 17.7825s. Need more tokens? Upgrade to Dev Tier today at h"
+    },
+    {
+      "t": "llm_error",
+      "ts": "2026-11-14T15:18:50+05:30",
+      "error": "HTTP 429: {\"error\":{\"message\":\"Rate limit reached for model `openai/gpt-oss-20b` in organization `org_01kcvbvs9bfv3vny7yp9ed14q2` service tier `on_demand` on tokens per minute (TPM): Limit 8000, Used 7524, Requested 2755. Please try again in 17.0925s. Need more tokens? Upgrade to Dev Tier today at h"
+    },
+    {
+      "t": "db",
+      "ts": "2026-11-14T15:18:50+05:30",
+      "method": "GET",
+      "path": "/v1/candidates/c004",
+      "request": null,
+      "status": 200,
+      "response": {
+        "version": 3
+      },
+      "ms": 1,
+      "attempt": 0
+    },
+    {
+      "t": "db",
+      "ts": "2026-11-14T15:18:50+05:30",
+      "method": "PATCH",
+      "path": "/v1/candidates/c004",
+      "request": {
+        "attempt_count": 1,
+        "last_contacted_at": "2026-11-14T15:18:50+05:30",
+        "notes": "[2026-11-14T15:18:50+05:30] AI agent (in_progress): Chat ended early (persona script ended); partial data saved. Candidate has not suggested a time. Collected: branch, email."
+      },
+      "status": 200,
+      "response": {
+        "version": 4
+      },
+      "ms": 1,
+      "attempt": 0
+    },
+    {
+      "t": "save_ok",
+      "ts": "2026-11-14T15:18:50+05:30",
+      "fields": [
+        "attempt_count",
+        "last_contacted_at",
+        "notes"
+      ]
+    },
+    {
+      "t": "abandoned",
+      "ts": "2026-11-14T15:18:50+05:30",
+      "reason": "persona script ended",
+      "outcome": "in_progress"
+    }
+  ],
+  "identity": true,
+  "saved": {
+    "branch": {
+      "old": null,
+      "new": "Electronics and Telecommunication",
+      "evidence": "I\u2019m studying Electronics and Telecommunication",
+      "ts": "2026-11-14T15:18:05+05:30"
+    },
+    "email": {
+      "old": "sneha@gmial.com",
+      "new": "snehaiyer@gmail.com",
+      "evidence": "snehaiyer@gmail.com",
+      "ts": "2026-11-14T15:18:28+05:30"
+    }
+  },
+  "verified": [],
+  "unsaved": {},
+  "autofix": {},
+  "refused": [],
+  "stalls": 6,
+  "follow_up_hint": false,
+  "ended": true,
+  "outcome": "in_progress",
+  "started_at": "2026-11-14T15:17:56+05:30",
+  "turns": 14,
+  "plan": {
+    "missing": [
+      "branch"
+    ],
+    "invalid": [],
+    "confirm": [
+      {
+        "field": "email",
+        "value": "sneha@gmial.com",
+        "reason": "'sneha@gmial.com' looks like a typo or placeholder address; read it back to the candidate and confirm"
+      }
+    ],
+    "autofix": {},
+    "optional_missing": [
+      "linkedin_url",
+      "github_url",
+      "skills"
+    ]
+  },
+  "final_write_ok": true
+}

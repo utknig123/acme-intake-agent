@@ -1,0 +1,9 @@
+AGENT: Hi! I’m the ACME internship team assistant. Could you please confirm that I’m speaking with Aarav Mehta?
+CANDIDATE: yes that's me
+AGENT: Great! Could you share your email address and your CGPA (out of 10)?
+CANDIDATE: my email is aarav.mehta@gmail.com and cgpa is 8.6
+AGENT: Would you like to share a GitHub profile link? If not, just let me know and we’ll finish up.
+CANDIDATE: no skip the optional ones
+AGENT: All set! Your application is complete. Have a great day!
+
+OUTCOME: completed
