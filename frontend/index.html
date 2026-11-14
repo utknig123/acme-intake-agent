@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ACME Intake Agent</title>
+<meta name="description" content="Autonomous AI agent that completes internship applications over chat.">
+<link rel="icon" href="favicon.svg">
+<link rel="stylesheet" href="styles.css">
+<script src="config.js"></script>
+</head>
+<body>
+<header class="top">
+  <div class="brand"><span class="logo">A</span><div><b>ACME Intake Agent</b><small>One chat. One complete application.</small></div></div>
+  <div class="top-actions">
+    <span id="health" class="pill">checking…</span>
+    <button id="theme" class="icon" title="Toggle theme" aria-label="Toggle theme">◐</button>
+    <button id="reset" class="ghost" title="Restore the original seed data">Reset data</button>
+  </div>
+</header>
+<nav class="tabs-m" id="mtabs"><button data-p="p-list" class="on">Candidates</button><button data-p="p-chat">Chat</button><button data-p="p-insp">Agent view</button></nav>
+
+<main class="grid">
+  <aside id="p-list" class="panel list">
+    <div class="ph"><h2>Work queue</h2></div>
+    <div id="funnel" class="funnel"></div>
+    <div id="queue" class="queue"></div>
+    <div class="ph"><h2>Candidates</h2><button id="refresh" class="icon" title="Refresh" aria-label="Refresh">↻</button></div>
+    <form id="manual"><input id="cid" placeholder="Candidate ID (c001)" autocomplete="off" aria-label="Candidate ID"><button class="primary">Start</button></form>
+    <div id="cands" class="cands"><div class="skel"></div><div class="skel"></div><div class="skel"></div></div>
+  </aside>
+
+  <section id="p-chat" class="panel chat">
+    <div class="chat-head">
+      <div class="ring" id="ring" title="Mandatory fields complete"><svg viewBox="0 0 36 36"><circle class="bg" cx="18" cy="18" r="15.5"/><circle class="fg" id="ringfg" cx="18" cy="18" r="15.5" stroke-dasharray="0 100"/></svg><span id="ringtxt">–</span></div>
+      <div class="who"><b id="ch-name">No chat yet</b><small id="ch-sub">Pick a candidate to begin. You play the candidate.</small></div>
+      <button id="leave" class="ghost danger" hidden>Leave chat</button>
+    </div>
+    <div id="chips" class="chips" hidden></div>
+    <div id="qbar" class="qbar" hidden></div>
+    <div id="msgs" class="msgs" aria-live="polite">
+      <div class="empty"><div class="big">💬</div><b>Ready when you are</b><p>Choose a candidate. The agent audits the record, decides what to collect and opens the conversation. If nothing is missing, it won't bother them.</p></div>
+    </div>
+    <div id="banner" class="banner" hidden></div>
+    <form id="composer" class="composer"><button type="button" id="mic" class="icon mic" title="Speak your answer" aria-label="Speak">🎤</button><input id="text" placeholder="Reply as the candidate…" autocomplete="off" disabled aria-label="Message"><button class="primary" disabled>Send</button></form>
+  </section>
+
+  <aside id="p-insp" class="panel insp">
+    <div class="itabs" role="tablist"><button class="on" data-t="t-act">Activity</button><button data-t="t-rec">Record</button><button data-t="t-plan">Plan</button><button data-t="t-brief">Hand-off</button></div>
+    <div id="t-act" class="tab on"><p class="muted pad">Tool calls, validations, guardrails and database writes stream here.</p></div>
+    <div id="t-rec" class="tab"><p class="muted pad">Start a chat to see the live record with provenance.</p></div>
+    <div id="t-plan" class="tab"></div>
+    <div id="t-brief" class="tab"><p class="muted pad">A recruiter hand-off brief appears when the chat ends.</p></div>
+  </aside>
+</main>
+<div id="toast" class="toast" hidden></div>
+<script src="app.js"></script>
+</body>
+</html>
